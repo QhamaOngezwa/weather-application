@@ -9,3 +9,7 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+.input-form {
+  background-color: rgba(128, 128, 128, 0.671);
+  color: white;
+}

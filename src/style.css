@@ -4,6 +4,7 @@ body {
 }
 a {
   color: #89acab;
+  font-weight: bold;
 }
 
 .container {

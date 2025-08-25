@@ -5,6 +5,9 @@ function updateWeather(response) {
   let cityHumidity = document.querySelector;
   let currentTemperature = response.data.temperature.current;
   let cityName = document.querySelector("#city-name");
+  let description = document.querySelector("#description");
+
+  description.innerHTML = response.data.condition.description;
   cityName.innerHTML = response.data.city;
   cityTemperature.innerHTML = Math.round(currentTemperature);
 }
@@ -24,4 +27,4 @@ function changeCity(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", changeCity);
-searchCity("Alice");
+searchCity("Johannesburg");

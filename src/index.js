@@ -11,7 +11,7 @@ function updateWeather(response) {
   let currentDate = new Date(response.data.time * 1000);
   let weatherIcon = document.querySelector("#icon");
 
-  weatherIcon.innerHTML = `<img src="${response.condition.icon_url}" class="weather-app-temperature-icon"/>`;
+  weatherIcon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-temperature-icon"/>`;
   currentTime.innerHTML = formatDate(currentDate);
   windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
   cityHumidity.innerHTML = `${response.data.temperature.humidity}%`;

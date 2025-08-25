@@ -3,10 +3,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 .container {
-  background-color: rgba(128, 128, 128, 0.493);
+  background-color: white;
   width: 50%;
   margin: 40px auto;
   padding: 20px;
+  box-shadow: rgba(128, 128, 128, 0.493);
   border-radius: 10px;
 }
 .input-form {

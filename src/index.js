@@ -17,9 +17,9 @@ function updateWeather(response) {
   cityName.innerHTML = response.data.city;
   cityTemperature.innerHTML = Math.round(currentTemperature);
 }
-function formatDate(date) {
-  let minutes = date.getMinutes();
-  let hours = date.getHours();
+function formatDate(currentDate) {
+  let minutes = currentDate.getMinutes();
+  let hours = currentDate.getHours();
   let days = [
     "Sunday",
     "Monday",
@@ -29,6 +29,7 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
+  let day = days[currentDate.getDay()];
   return `${day} ${hours}:${minutes},`;
 }
 function searchCity(city) {

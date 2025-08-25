@@ -17,6 +17,20 @@ function updateWeather(response) {
   cityName.innerHTML = response.data.city;
   cityTemperature.innerHTML = Math.round(currentTemperature);
 }
+function formatDate(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return `${day} ${hours}:${minutes},`;
+}
 function searchCity(city) {
   let apiKey = "c0fete58adfd83d2733e0c0bo44abfc6";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units = metric`;

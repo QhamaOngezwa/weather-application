@@ -24,3 +24,4 @@ function changeCity(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", changeCity);
+searchCity("Alice");

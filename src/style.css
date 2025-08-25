@@ -59,15 +59,16 @@ main {
 }
 .weather-app-temperature-icon {
   font-size: 44px;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 .weather-app-temperature-value {
   font-size: 58px;
   margin-top: 20px;
+  margin-left: 5px;
   font-weight: bold;
 }
 .weather-app-temperature-unit {
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 18px;
 }
 footer {

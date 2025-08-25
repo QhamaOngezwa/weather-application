@@ -2,7 +2,6 @@ function updateWeather(response) {
   let cityTemperature = document.querySelector(
     "#weather-app-temperature-value"
   );
-  let cityHumidity = document.querySelector;
   let currentTemperature = response.data.temperature.current;
   let cityName = document.querySelector("#city-name");
   let description = document.querySelector("#description");

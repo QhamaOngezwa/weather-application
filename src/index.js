@@ -7,3 +7,8 @@ function changeCity(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", changeCity);
+
+let apiKey = c0fete58adfd83d2733e0c0bo44abfc6;
+let apiUrl =
+  "https://api.shecodes.io/weather/v1/current?query={query}&key={apiKey}";
+axios.get(apiUrl);

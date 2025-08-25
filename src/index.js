@@ -2,7 +2,8 @@ function updateWeather(response) {
   let cityTemperature = document.querySelector(
     "#weather-app-temperature-value"
   );
-  cityTemperature.innerHTML = response.data.temperature.current;
+  let currentTemperature = response.data.temperature.current;
+  cityTemperature.innerHTML = Math.round(currentTemperature);
 }
 function searchCity(city) {
   let apiKey = "c0fete58adfd83d2733e0c0bo44abfc6";

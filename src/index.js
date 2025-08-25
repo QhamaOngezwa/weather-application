@@ -7,6 +7,8 @@ function updateWeather(response) {
   let cityName = document.querySelector("#city-name");
   let description = document.querySelector("#description");
   let cityHumidity = document.querySelector("#humidity");
+
+  cityHumidity.innerHTML = `${response.data.temperature.humidity}%`;
   description.innerHTML = response.data.condition.description;
   cityName.innerHTML = response.data.city;
   cityTemperature.innerHTML = Math.round(currentTemperature);

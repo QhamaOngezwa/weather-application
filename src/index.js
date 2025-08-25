@@ -1,5 +1,4 @@
 function changeCity(event) {
-  event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
   let cityName = document.querySelector("#city-name");
   cityName.innerHTML = searchInput.value;

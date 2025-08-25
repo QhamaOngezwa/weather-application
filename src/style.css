@@ -19,3 +19,11 @@ body {
   color: white;
   width: 80%;
 }
+.search-form-button {
+  background-color: #32e6e2;
+  padding: 15px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  color: white;
+}

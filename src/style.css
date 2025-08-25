@@ -62,7 +62,7 @@ main {
 }
 .weather-app-temperature-value {
   font-size: 88px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-weight: bold;
 }
 .weather-app-temperature-unit {

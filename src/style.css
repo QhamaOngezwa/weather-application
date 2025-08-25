@@ -61,6 +61,10 @@ main {
   font-size: 44px;
   margin-top: 22px;
 }
+.weather-app-temperature-value {
+  font-size: 48px;
+  margin-top: 20px;
+}
 footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;

@@ -47,7 +47,7 @@ main {
 }
 .weather-app-data {
   font-size: 16px;
-  color: rgba(128, 128, 128, 0.473);
+  color: rgb(128, 128, 128);
   line-height: 20px;
   font-weight: 200;
 }

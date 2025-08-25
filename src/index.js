@@ -10,7 +10,7 @@ function updateWeather(response) {
   let currentTime = document.querySelector("#time");
   let currentDate = new Date(response.data.time * 1000);
 
-  currentTime.innerHTML = formatDate(date);
+  currentTime.innerHTML = formatDate(currentDate);
   windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
   cityHumidity.innerHTML = `${response.data.temperature.humidity}%`;
   description.innerHTML = response.data.condition.description;

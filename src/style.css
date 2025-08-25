@@ -28,13 +28,16 @@ body {
   margin-left: 5px;
   color: white;
 }
+main {
+  padding: 30px 0;
+}
 .weather-data {
   display: flex;
   justify-content: space-between;
 }
 
 footer {
-  border-top: 2px solid #f9f7fe;
+  border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;

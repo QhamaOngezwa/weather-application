@@ -1,5 +1,5 @@
 function updateWeather(response) {
-  console.log(response.data);
+  console.log(response.data.temperature);
 }
 function searchCity(city) {
   let apiKey = "c0fete58adfd83d2733e0c0bo44abfc6";

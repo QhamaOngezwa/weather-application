@@ -9,7 +9,7 @@ header {
   padding: 0 0 30px 0;
 }
 a {
-  color: #8e69e4;
+  color: #b5a7d6;
   font-weight: bold;
 }
 
@@ -80,5 +80,6 @@ footer {
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
-  color: rgb(0, 0, 0, 0.6);
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.562);
 }

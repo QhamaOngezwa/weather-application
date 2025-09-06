@@ -51,6 +51,23 @@ function changeCity(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Tues", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+  days.forEach(function (day) {
+    forecastHTML += `<div class="weather-app-forecast-day">
+       <div class="weather-app-forecast-date">${day}</div>
+       <div class="weather-app-forecast-icon">⛅</div>
+       <div class="weather-app-forecast-temperatures">
+       <div class="weather-app-forecast-temperature">
+        <strong>15°</strong>
+       </div><div class="weather-app-forecast-temperature">7°</div></div></div>`;
+  });
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastHTML;
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", changeCity);
 searchCity("Johannesburg");
+displayForecast();
